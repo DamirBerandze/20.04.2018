@@ -28,7 +28,8 @@ main()
 	puts("Введите b второго числа: ");
 	scanf("%f", &second.ib);
 	
-	printf("Получившееся число: %.1f + i*%.1f\n", first.a + second.a, first.ib + second.ib);
+	printf("Получившееся число (сумма): %.1f + %.1f\*i\n", first.a + second.a, first.ib + second.ib);
+	printf("Получившееся число (произведение): %.1f + %.1f\*i", first.a*second.a - first.ib*second.ib, first.ib*second.a + second.ib*first.a);
 	
 	Sleep(500);
 	system("pause");
