@@ -38,8 +38,16 @@ main()
 	
 	new_date.time = new_date.year*12 + new_date.month;
 	
-	if((first.time < new_date.time)&(second.time > new_date.time))	puts("Данная дата входит в отрезок\n");
-	else	puts("Данная дата не входит в отрезок\n");
+	if(first.time > second.time)
+	{
+		if((first.time < new_date.time)&(second.time > new_date.time))	puts("Данная дата входит в отрезок\n");
+		else	puts("Данная дата не входит в отрезок\n");
+	}
+	else
+	{
+		if((first.time > new_date.time)&(second.time < new_date.time))	puts("Данная дата входит в отрезок\n");
+		else	puts("Данная дата не входит в отрезок\n");
+	}
 	
 	system("pause");
 	
